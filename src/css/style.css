@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: white;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Raleway;
+  font-size: 2.25rem;
+  line-height: 42px;
+  letter-spacing: -0.72px;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 58px;
+}
+
+/* NAVBAR */
+#navbar {
+  width: 608px;
+
+  border-bottom: 1px solid #bdbdbd;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar a {
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #333333;
+  text-align: center;
+  font-weight: 600;
+}
+
+.line-blue {
+  margin-top: 14px;
+  background: transparent;
+
+  width: 89px;
+  height: 4px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.active-link {
+  background: #2f80ed;
+}
+
+/*Form*/
+
+#form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+#content {
+  width: 476px;
+  height: 56px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+Input,
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+  width: 78px;
+  height: 17px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 17px;
+  /* identical to box height */
+  padding-left: 12px;
+  padding-bottom: 19px;
+  padding-top: 20px;
+
+  /* Gray 3 */
+
+  color: #828282;
+}
+
+Input {
+  color: #000000;
+}
+
+textarea:focus,
+input:focus,
+input[type]:focus,
+select:focus {
+  border-color: #8282821a;
+  outline: 0;
+  box-shadow: 0 0 0 2px #82828217;
+  outline: none;
+}
+
+#Add {
+  margin-left: 25px;
+  width: 109px;
+  height: 56px;
+  /* */
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 17px;
+  /* */
+  border-style: solid;
+  border-color: transparent;
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+}
+
+#Add:hover {
+  background: #2f81edb6;
+}
+/*lista*/
+
+.list {
+  margin-top: 33px;
+  padding-left: 2.5px;
+}
+
+.list div {
+  display: flex;
+  /*width: 608px;*/
+}
+
+.list label {
+  width: 583px;
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.list p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 22px;
+  color: #000000;
+  margin-left: 7px;
+  /*text-decoration:line-through;*/
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+
+  background: #2f80ed;
+  border-radius: 4px;
+}
+
+/*
+  <!-- explicit style -->
+  <font-awesome-icon :icon="['fas', 'phone']" />
+
+  <!-- implicit style (fas is assumed) -->
+  <font-awesome-icon icon="phone" />
+  */
+.icon {
+  background-color: #2f80ed;
+  width: 25px;
+  height: 25px;
+  border-color: transparent;
+  border-radius: 50%;
+  position: relative;
+}
+
+.icon:hover {
+  background-color: #2f81ed2a;
+}
+
+@media (max-width: 670px) {
+  html {
+    font-size: 95%;
+  }
+
+  #navbar {
+    width: 450px;
+  }
+
+  #content {
+    width: 352.24px;
+    height: 50px;
+  }
+
+  #Add {
+    width: 80.66px;
+    height: 50px;
+    margin-left: 22.5px;
+  }
+
+  .list label {
+    width: 423.22px;
+
+    margin-bottom: 26px;
+  }
+
+  .line-blue {
+    width: 82px;
+  }
+}
+
+@media (max-width: 510px) {
+  html {
+    font-size: 85%;
+  }
+  /*77.78*/
+
+  #navbar {
+    width: 315px;
+  }
+
+  .line-blue {
+    width: 72px;
+  }
+
+  #content {
+    width: 246.568px;
+    height: 42.5px;
+  }
+
+  #Add {
+    width: 56.462px;
+    height: 42.5px;
+    margin-left: 12.5px;
+  }
+
+  .list label {
+    width: 289px;
+
+    margin-bottom: 26px;
+  }
+
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    
+  }
+}
